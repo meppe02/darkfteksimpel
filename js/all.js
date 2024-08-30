@@ -3,7 +3,7 @@ const isGitHub = window.location.hostname.includes('github.io');
 const repoName = 'darkfteksimpel'; // Repository name
 const url = isGitHub ? `/${repoName}/` : 'http://127.0.0.1:5500/';
 const expfysen_url = "https://stekpannan02.github.io/Expfys-calculator/";
-const svgUrl = url + 'images/ftek.svg'; // Path to your local SVG file
+const svgUrl = url + 'img/ftek.svg'; // Path to your local SVG file
 const hem_state=false 
 // Function to check website status and update link accordingly
 function checkAndUpdateLink() {
