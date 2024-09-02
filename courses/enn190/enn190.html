@@ -7,7 +7,7 @@
     <script>
         function getBaseUrl() {
             const onGithub = window.location.hostname.includes('github.io');
-            return (onGithub)? '/darkfteksimpel/' : '/';
+            return (onGithub)? '/darkfteksimpel/' : '../../';
         }
         const baseUrl = getBaseUrl();
     </script>
@@ -27,11 +27,15 @@
     <link id="cssEnn190" rel="stylesheet" href="">
     <script>
         // Once the DOM is fully loaded, set the correct paths for CSS and dynamically inject scripts
+        console.log(document.getElementById('cssAll').href);
+        console.log(baseUrl + 'all.css');
+
         document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('cssAll').href = baseUrl + 'all.css';
         document.getElementById('cssCourses').href = baseUrl + 'courses/courses.css';
         document.getElementById('cssEnn190').href = baseUrl + 'courses/enn190/enn190.css';
-
+        
+        console.log(document.getElementById('cssAll').href);
         // Function to dynamically load script
         function loadScript(src) {
           var script = document.createElement('script');
@@ -44,6 +48,7 @@
         loadScript(baseUrl + 'all.js');
         loadScript(baseUrl + 'courses/enn190/enn190.js');
       });
+
     </script>
 </body>
 </html>

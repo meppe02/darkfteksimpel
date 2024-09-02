@@ -1,7 +1,7 @@
 // Base URL, adjusting for GitHub Pages or local hosting
 const isGitHub = window.location.hostname.includes('github.io');
 const repoName = 'darkfteksimpel'; // Repository name
-const url = isGitHub ? `/${repoName}/` : 'http://127.0.0.1:5500/';
+const url = isGitHub ? `/${repoName}/` : 'http://127.0.0.1:5500/darkfteksimpel/';
 const expfysen_url = "https://stekpannan02.github.io/Expfys-calculator/";
 const svgUrl = url + 'images/ftek.svg'; // Path to your local SVG file
 const hem_state=false 

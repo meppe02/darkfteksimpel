@@ -2,6 +2,7 @@ import os
 map="courses"
 cwd=os.getcwd()
 pathToCourses=os.path.join(cwd, map)
+
 def nameOfCourse():
     while True:
         ans_continue=False
@@ -20,6 +21,7 @@ def exist(name, path):
 def createDir(name, path):
     name=name.lower()
     fullPath= os.path.join(path, name)
+    print(f"Name of path{fullPath}")
     if not exist(name, path):
         os.mkdir(fullPath)
         return 1
@@ -56,7 +58,7 @@ def createFiles(name, path):
             <script>
                 function getBaseUrl() {{
                 const onGithub = window.location.hostname.includes('github.io');
-                return onGithub ? '/darkfteksimpel/' : '/';
+                return onGithub ? '/darkfteksimpel/' : '../../';
                 }}
                 const baseUrl = getBaseUrl();
             </script>

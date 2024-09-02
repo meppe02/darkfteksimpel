@@ -4,7 +4,7 @@ const id = "courses";
 // Base URL, adjusting for GitHub Pages
 // Checks if the current host includes 'github.io', adjusts path accordingly
 const baseURL = window.location.hostname.includes('github.io') ?
-                '/darkfteksimpel/' : '/';
+                '/darkfteksimpel/' : '';
 
 let htmlContent = courses.sort().map(course => {
     const upper = course.toUpperCase();
