@@ -1,2 +1,5 @@
 1. Fetch everything from a server
 2. Dont forget to update create.py when updating the html
+
+
+3. MAKE IT SO THE PYTHON CODE LOOKS AT THE COURSES MAP AND MAKES THE INDEX.JS ARRAY ACCORDING TO THAT
