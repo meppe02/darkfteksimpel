@@ -1,4 +1,4 @@
-const subs = [{ "Teorifrågor": "https://drive.google.com/drive/folders/1FNYNQi3PO1Q1JxNd3vFwiIi_zGoEdYbB" }];
+const subs = [{ "Teorifrågor från tentor": "https://drive.google.com/drive/folders/1FNYNQi3PO1Q1JxNd3vFwiIi_zGoEdYbB" }];
 const leftDiv = document.getElementById("left_div");
 
 subs.forEach(obj => {
