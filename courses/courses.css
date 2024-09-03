@@ -2,25 +2,21 @@
     display: flex; /* Enables flexbox */
     align-items: flex-start; /* Align items to the start of the flex container */
     color: black;
-    height: fit-content; /* Ensures the container fits its content */
 }
 
 #kurslit p {
     margin-right: 20px; /* Adds some space between the text and the links */
     color: black;
-    font-size: 2em; /* Sets the size of the Kursliteratur text */
+    font-size: 2em;
 }
 
 #file {
     display: flex;
     flex-direction: column; /* Stacks the links vertically */
-    justify-content: space-between; /* Distributes space between children */
-    height: 100%; /* Sets height equal to its container to align children */
+    align-items: flex-start; /* Aligns links to the start (left) */
 }
 
 #file li {
-    display: flex; /* Makes the list item a flex container */
-    align-items: center; /* Centers items vertically */
     list-style: none; /* Removes bullet points from list items */
     text-decoration: underline;
 }
