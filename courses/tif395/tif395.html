@@ -1,0 +1,66 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+                <!-- Links will be set via JavaScript below -->
+            <link id="cssAll" rel="stylesheet">
+            <link id="cssCourses" rel="stylesheet">
+            <link id="cssTif083" rel="stylesheet">
+            
+        </head>
+        <body>
+            <div class="main">
+                <div class="grid_container">
+                    <div id="left_div">
+                        <div id="left_div">
+                            <div id="kurslit">
+                                <p>Kursliteratur</p>
+                                <div id="file">
+                                    <li>
+                                        <a href="files/bok.pdf" target="_blank">Visa</a>
+                                    </li>
+                                    <li>
+                                        <a href="files/bok.pdf" download="bok.pdf" target="_blank">Ladda ner</a>
+                                    </li>
+                                </div>
+                            </div>
+                    </div>
+                    <div id="right_div">
+                    </div>
+                </div>
+            </div>
+            <script>
+                function getBaseUrl() {
+                const onGithub = window.location.hostname.includes('github.io');
+                return onGithub ? '/darkfteksimpel/' : '../../';
+                }
+                const baseUrl = getBaseUrl();
+            </script>
+            <script>
+            // Once the DOM is fully loaded, set the correct paths for CSS and dynamically inject scripts
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('cssAll').href = baseUrl + 'all.css';
+                document.getElementById('cssCourses').href = baseUrl + 'courses/courses.css';
+                document.getElementById('cssTif083').href = baseUrl + 'courses/tif395/tif395.css';
+
+                // Function to dynamically load script
+                function loadScript(src) {
+                var script = document.createElement('script');
+                script.src = src;
+                script.async = false; // This preserves the execution order
+                document.body.appendChild(script);
+                }
+
+                // Load scripts dynamically
+                loadScript(baseUrl + 'all.js');
+                loadScript(baseUrl + 'courses/tif395/tif395.js');
+            });
+            </script>
+        </body>
+        </html>
+
+
+        

@@ -1,14 +1,32 @@
-.main {
-    flex-grow: 1;
+#kurslit {
+    display: flex; /* Enables flexbox */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    color: black;
+    height: fit-content; /* Ensures the container fits its content */
+}
+
+#kurslit p {
+    margin-right: 20px; /* Adds some space between the text and the links */
+    color: black;
+    font-size: 2em; /* Sets the size of the Kursliteratur text */
+}
+
+#file {
     display: flex;
-    padding: 20px;
-    width: 100%;
-    align-items: stretch; /* Ensure it stretches to fit */
+    flex-direction: column; /* Stacks the links vertically */
+    justify-content: space-between; /* Distributes space between children */
+    height: 100%; /* Sets height equal to its container to align children */
+}
+
+#file li {
+    display: flex; /* Makes the list item a flex container */
+    align-items: center; /* Centers items vertically */
+    list-style: none; /* Removes bullet points from list items */
+    text-decoration: underline;
 }
 
 .main li a {
     color: black;
     text-decoration: none;
-    list-style: none;
-    font-size: 2em;
+    font-size: 1em; /* Adjust size as per your design needs */
 }

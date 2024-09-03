@@ -1,4 +1,4 @@
-const courses = ["tif083", "enn190", "tma970","fyp300"];
+const courses = ["tif083", "enn190", "tma970","fyp300","tif395"];
 const id = "courses";
 
 // Base URL, adjusting for GitHub Pages
